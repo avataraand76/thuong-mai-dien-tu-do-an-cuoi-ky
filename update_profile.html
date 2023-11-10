@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update profile</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">candy store 🍬</a>
+
+            <nav class="navbar">
+                <a href="home.html">home</a>
+                <a href="about.html">about</a>
+                <a href="menu.html">menu</a>
+                <a href="orders.html">orders</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="search.html"><i class="fas fa-search"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+
+            <div class="profile">
+                <p class="name">Tran Viet Thanh</p>
+                <div class="flex">
+                    <a href="profile.html" class="btn">profile</a>
+                    <a href="#" class="delete-btn">logout</a>
+                </div>
+                <p class="account"><a href="login.html">login</a> or <a href="register.html">register</a></p>
+            </div>
+
+        </section>
+
+    </header>
+    <!-- header section ends -->
+
+    <section class="form-container">
+
+        <form action="" method="POST">
+            <h3>update profile</h3>
+            <input type="text" required maxlength="20" name="name" placeholder="enter your name" class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="Tran Viet Thanh">
+            <input type="email" required maxlength="50" name="email" placeholder="enter your email" class="box" oninput="this.value = this.value.replace(/\s/g, '')" value="abcxyz@gmai.com">
+            <input type="numner" min="0" max="9999999999" onkeypress="if(this.value.length == 10) return false;" placeholder="enter your number" required class="box" name="number" value="0123456789">
+            <input type="password" maxlength="20" name="old_pass" placeholder="enter your old password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" maxlength="20" name="new_pass" placeholder="enter your new password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="password" maxlength="20" name="confirm_pass" placeholder="confirm your new password" class="box" oninput="this.value = this.value.replace(/\s/g, '')">
+            <input type="submit" value="update now" class="btn" name="submit">
+        </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts -->
+    <footer class="footer">
+
+        <section class="grid">
+
+            <div class="box">
+                <img src="images/email-icon.png" alt="">
+                <h3>our email</h3>
+                <a href="mailto:abcxyz@gmail.com">abcxyz</a>
+                <a href="mailto:123456@gmail.com">123456</a>
+            </div>
+
+            <div class="box">
+                <img src="images/clock-icon.png" alt="">
+                <h3>opening</h3>
+                <p>7AM to 10PM</p>
+            </div>
+
+            <div class="box">
+                <img src="images/map-icon.png" alt="">
+                <h3>our email</h3>
+                <a href="#">Ho Chi Minh city</a>
+            </div>
+
+            <div class="box">
+                <img src="images/phone-icon.png" alt="">
+                <h3>our phone</h3>
+                <a href="tel:0123456789">012-345-6789</a>
+                <a href="tel:9876543210">987-654-3210</a>
+            </div>
+
+        </section>
+
+        <div class="credit">created by <span>nhóm 6</span> | all rights reserved!</div>
+
+    </footer>
+    <!-- footer section ends -->
+
+    <div class="loader">
+        <img src="images/loader.gif" alt="">
+    </div>
+
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
